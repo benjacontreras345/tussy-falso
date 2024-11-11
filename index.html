@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tussy - Moda Urbana</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#coleccion">Colección</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="inicio">
+        <div class="banner-container">
+            <img src="img/tussy.banner.png" alt="Banner principal de Tussy" class="banner-tussy">
+            <div class="banner-text">
+                <h1>Tussy - Moda Urbana</h1>
+                <p>Exprésate con estilo, calidad y autenticidad.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <div class="info-nosotros">
+            <div class="mision">
+                <h3>Misión</h3>
+                <p>creemos que la moda es más que ropa; es una expresión de identidad, estilo y personalidad. Nos dedicamos a crear piezas únicas y de calidad que se adapten a cada ocasión, cuidando cada detalle para ofrecerte un estilo moderno y atemporal.Explora nuestras colecciones y descubre ropa hecha para destacar. Porque en Tussy, la moda es para todos. ¡Gracias por ser parte de nuestra historia!</p>
+            </div>
+            <div class="vision">
+                <h3>Visión</h3>
+                <p>Nuestra visión es construir un futuro donde cada prenda que uses no solo sea una elección de moda, sino también una contribución a un mundo más sostenible. Nos esforzamos por inspirar un cambio positivo en la industria, apoyando prácticas éticas y promoviendo el uso de materiales responsables y procesos que reduzcan nuestro impacto ambiental.</p>
+            </div>
+            <div class="valores">
+                <h3>Valores</h3>
+                <ul>
+                    <li>Innovación</li>
+                    <li>Sostenibilidad</li>
+                    <li>Creatividad</li>
+                    <li>Calidad</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="coleccion">
+        <h2>Nuestra Colección</h2>
+        <div class="galeria">
+            <div class="galeria-item">
+                <img src="img/remera.Tussy.png" alt="Remeras oversize" class="coleccion-img" onclick="openModal('modal-remera')">
+                <p>Remeras oversize</p>
+                <p>Precio: $20.000</p>
+                <p>Gama de colores: black/white/blue</p>
+            </div>
+            <div class="galeria-item">
+                <img src="img/buzo.Tussy.png" alt="Buzos oversize" class="coleccion-img" onclick="openModal('modal-buzo')">
+                <p>Buzos oversize</p>
+                <p>Precio: $60.000</p>
+                <p>Gama de colores: black/white/orange/blue</p>
+            </div>
+            <div class="galeria-item">
+                <img src="img/camisa.Tussy.png" alt="Camisas de lino" class="coleccion-img" onclick="openModal('modal-camisa')">
+                <p>Camisas de lino</p>
+                <p>Precio: $45.000</p>
+                <p>Gama de colores: white/black</p>
+            </div>
+            <div class="galeria-item">
+                <img src="img/pantalones.png" alt="Pantalones" class="coleccion-img" onclick="openModal('modal-pantalones')">
+                <p>Pantalones cargos</p>
+                <p>Precio: $60.000</p>
+                <p>Gama de colores: black/white/brown</p>
+                <p>Sin stock</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <div id="modal-remera" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-remera')">&times;</span>
+            <h2>Remeras oversize</h2>
+            <p>Precio: $20.000</p>
+            <p>Gama de colores: black/white/blue</p>
+            <img src="img/remera.Tussy.png" alt="Remeras oversize">
+        </div>
+    </div>
+    
+    <div id="modal-buzo" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-buzo')">&times;</span>
+            <h2>Buzos oversize</h2>
+            <p>Precio: $60.000</p>
+            <p>Gama de colores: black/white/orange/blue</p>
+            <img src="img/buzo.Tussy.png" alt="Buzos oversize">
+        </div>
+    </div>
+    
+    <div id="modal-camisa" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-camisa')">&times;</span>
+            <h2>Camisas de lino</h2>
+            <p>Precio: $45.000</p>
+            <p>Gama de colores: white/black</p>
+            <img src="img/camisa.Tussy.png" alt="Camisas de lino">
+        </div>
+    </div>
+    
+    <div id="modal-pantalones" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-pantalones')">&times;</span>
+            <h2>Pantalones cargos</h2>
+            <p>Precio: $60.000</p>
+            <p>Gama de colores: black/white/brown</p>
+            <p>Sin stock</p>
+            <img src="img/pantalones.png" alt="Pantalones">
+        </div>
+    </div>
+    
+    
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-container">
+            <div class="servicio">
+                <img src="img/guia de talles.png" alt="Guia de talles">
+                <h3>Guia de talles</h3>
+                <p>En este espacio queremos que encuentres la prenda perfecta para ti, y sabemos que elegir el talle correcto es fundamental. .</p>
+            </div>
+            <div class="servicio">
+                <img src="img/prendas.jpg" alt="Personalización de prendas">
+                <h3>Personalización de prendas</h3>
+                <p>Customiza tus prendas con estampados y bordados únicos.</p>
+            </div>
+            <div class="servicio">
+                <img src="img/eco friendly.png" alt="Moda sostenible">
+                <h3>Moda sostenible</h3>
+                <p>Utilizamos materiales eco-friendly para cuidar el medio ambiente.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna duda o consulta? Envíanos un mensaje.</p>
+        <form id="form-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</body>
+</html>
+
